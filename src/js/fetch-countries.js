@@ -31,7 +31,7 @@ function fetchCountries(searchQuery) {
                 const [{ name, capital, languages, population, flag }] = country;
                 const formattedArray = { name, capital, languages, population, flag };
                 refs.searchBoxRef.insertAdjacentHTML('beforeend', countryCardMarkup(formattedArray));
-            } else if (country.length < 11) { 
+            } else { 
                 removeContent();
                 const arrayOfCountryNames = country.map(item => `<li>${item.name}</li>`);
                 refs.searchedListRef.insertAdjacentHTML('beforeend', arrayOfCountryNames.join(''));
