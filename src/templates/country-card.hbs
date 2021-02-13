@@ -1,0 +1,13 @@
+<div class="card-box">
+    <h1 class="card-box__country"> {{name}} </h1>
+    <div class="text-container">
+        <p class="card-box__capital">Capital: <span class="card-box__text">{{capital}}</span></p>
+        <ul class="card-box__languages">Languages:
+            {{#languages}}
+            <li class="card-box__languages-item">{{name}}</li>
+            {{/languages}}
+        </ul>
+        <p class="card-box__population">Population: <span class="card-box__text">{{population}}</span></p>
+    </div>
+    <img class="card-box__flag" src='{{flag}}' alt='{{name}} flag' width="320" />
+</div>

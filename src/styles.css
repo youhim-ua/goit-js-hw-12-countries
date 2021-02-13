@@ -1,0 +1,145 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  background-image: url('./images/bg-pattern.png');
+}
+
+/*styles of the label*/
+.label-input {
+  display: block;
+  width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title-input {
+  display: block;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+/*styles of the input field*/
+#country-input {
+  display: block;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline-style: none;
+  margin-top: 20px;
+  width: 350px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  font-size: 20px;
+  transition: border-color 0.5s 0s ease-in-out;
+}
+
+#country-input:hover,
+#country-input:focus {
+  border-color: rgba(78, 41, 241, 0.726);
+  transition: border-color 0.5s 0s ease-in-out;
+}
+
+#country-input::placeholder {
+  color: rgb(4, 40, 241);
+}
+
+/*countries list styles*/
+.text-container {
+  display: inline-block;
+  margin-top: 60px;
+}
+
+.search-result {
+  display: block;
+  width: 650px;
+  margin: 20px auto 0;
+  padding: 0 0 0 170px;
+}
+
+/*styles of a country list template*/
+.card-box {
+  position: relative;
+  display: block;
+  width: 650px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.card-box__country,
+.card-box__capital,
+.card-box__languages,
+.card-box__population,
+.card-box__flag {
+  display: block;
+}
+
+.card-box__capital,
+.card-box__languages,
+.card-box__population {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-box__text,
+.card-box__languages-item {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.card-box__country {
+  text-align: center;
+}
+
+.card-box__capital {
+  /* margin-top: 60px; */
+}
+.card-box__languages,
+.card-box__population {
+  margin-top: 20px;
+}
+
+.card-box__languages {
+  list-style: none;
+}
+
+.card-box__languages-item {
+  padding-left: 15px;
+}
+
+.card-box__languages-item::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 100%;
+}
+
+.card-box__population {
+}
+
+.card-box__flag {
+  position: absolute;
+  right: 0;
+  top: 103px;
+}
